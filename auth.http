@@ -1,0 +1,28 @@
+### Register
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+  "username":"sample",
+  "password":"123qwe456asd"
+}
+
+### Login
+### Response: "token":"JWT_TOKEN"
+POST http://localhost:8080/authenticate
+Content-Type: application/json
+
+{
+  "username":"sample",
+  "password":"123qwe456asd"
+}
+
+### Check availability
+
+POST http://localhost:8080/hello
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYW1wbGUiLCJleHAiOjE2MDA1NDI5NjUsImlhdCI6MTYwMDUyNDk2NX0.nt9IMU5z9ZXUHq5qXHHg2LdLSq7PdnQY-aZrtPEbmjNShUP-Ph0i6jFQ_Hv2ZVu3FFugwoY12cYArE-hscTOXg
+
+{}
+
+
